@@ -3,24 +3,97 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahen & Nowal </title>
+  <title>Mahen & Nowal</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Gulzar&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=19">
 </head>
 <body>
+  <div id="gateIntro" class="gate-overlay" aria-label="Wedding Invitation Gate">
+    <div class="gate-scene">
+      <div class="gate-arch-crest">
+        <svg viewBox="0 0 800 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M50 170 Q 400 20, 750 170" stroke="#C5A059" stroke-width="4" fill="none"/>
+          <path d="M70 170 Q 400 40, 730 170" stroke="#2B533E" stroke-width="5" fill="none"/>
+          <path d="M400 30 Q 375 75, 400 120 Q 425 75, 400 30" fill="#C5A059" opacity="0.9"/>
+          <circle cx="400" cy="75" r="14" fill="#142B20" stroke="#C5A059" stroke-width="2.5"/>
+          <path d="M250 100 Q 320 70, 400 110 T 550 100" stroke="#C5A059" stroke-width="2" fill="none"/>
+          <path d="M150 140 Q 250 90, 350 130" stroke="#7BA38B" stroke-width="1.8" fill="none"/>
+          <path d="M650 140 Q 550 90, 450 130" stroke="#7BA38B" stroke-width="1.8" fill="none"/>
+        </svg>
+      </div>
+      
+      <div class="gate-doors-container">
+        <div class="gate-door gate-left" id="gateLeft">
+          <svg class="gate-filigree-svg" viewBox="0 0 350 700" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="doorGradLeft" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#244C38"/>
+                <stop offset="50%" stop-color="#183827"/>
+                <stop offset="100%" stop-color="#10271B"/>
+              </linearGradient>
+            </defs>
+            <rect width="350" height="700" fill="url(#doorGradLeft)"/>
+            <rect x="15" y="15" width="320" height="670" rx="12" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+            <rect x="25" y="25" width="300" height="650" rx="8" stroke="#3D6B50" stroke-width="1.8" fill="none"/>
+            <path d="M30 50 L320 340 M30 150 L320 440 M30 250 L320 540 M30 350 L320 640 M30 450 L270 670 M30 550 L170 670" stroke="#D4AF37" stroke-width="1.2" opacity="0.45"/>
+            <path d="M320 50 L30 340 M320 150 L30 440 M320 250 L30 540 M320 350 L30 640 M320 450 L80 670 M320 550 L180 670" stroke="#D4AF37" stroke-width="1.2" opacity="0.45"/>
+            <line x1="75" y1="30" x2="75" y2="670" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+            <line x1="175" y1="30" x2="175" y2="670" stroke="#D4AF37" stroke-width="2" opacity="0.75"/>
+            <line x1="275" y1="30" x2="275" y2="670" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="175" cy="350" r="55" stroke="#D4AF37" stroke-width="2.5" fill="#1C402E"/>
+            <circle cx="175" cy="350" r="45" stroke="#84AC93" stroke-width="1.5" fill="none"/>
+            <path d="M175 310 C155 330, 155 370, 175 390 C195 370, 195 330, 175 310 Z" fill="#D4AF37" opacity="0.85"/>
+            <path d="M60 80 Q 175 30, 290 80" stroke="#D4AF37" stroke-width="2" fill="none"/>
+            <path d="M60 620 Q 175 670, 290 620" stroke="#D4AF37" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
 
- <div class="floral-bg-petals" aria-hidden="true">
-  <span class="petal p1">🌸</span>
-  <span class="petal p2">🌺</span>
-  <span class="petal p3">🌼</span>
-  <span class="petal p4">🌷</span>
-  <span class="petal p5">🌸</span>
-  <span class="petal p6">🌼</span>
-</div>
+        <div class="gate-door gate-right" id="gateRight">
+          <svg class="gate-filigree-svg" viewBox="0 0 350 700" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="doorGradRight" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#244C38"/>
+                <stop offset="50%" stop-color="#183827"/>
+                <stop offset="100%" stop-color="#10271B"/>
+              </linearGradient>
+            </defs>
+            <rect width="350" height="700" fill="url(#doorGradRight)"/>
+            <rect x="15" y="15" width="320" height="670" rx="12" stroke="#D4AF37" stroke-width="2.5" fill="none"/>
+            <rect x="25" y="25" width="300" height="650" rx="8" stroke="#3D6B50" stroke-width="1.8" fill="none"/>
+            <path d="M30 50 L320 340 M30 150 L320 440 M30 250 L320 540 M30 350 L320 640 M30 450 L270 670 M30 550 L170 670" stroke="#D4AF37" stroke-width="1.2" opacity="0.45"/>
+            <path d="M320 50 L30 340 M320 150 L30 440 M320 250 L30 540 M320 350 L30 640 M320 450 L80 670 M320 550 L180 670" stroke="#D4AF37" stroke-width="1.2" opacity="0.45"/>
+            <line x1="75" y1="30" x2="75" y2="670" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+            <line x1="175" y1="30" x2="175" y2="670" stroke="#D4AF37" stroke-width="2" opacity="0.75"/>
+            <line x1="275" y1="30" x2="275" y2="670" stroke="#D4AF37" stroke-width="1.2" opacity="0.5"/>
+            <circle cx="175" cy="350" r="55" stroke="#D4AF37" stroke-width="2.5" fill="#1C402E"/>
+            <circle cx="175" cy="350" r="45" stroke="#84AC93" stroke-width="1.5" fill="none"/>
+            <path d="M175 310 C155 330, 155 370, 175 390 C195 370, 195 330, 175 310 Z" fill="#D4AF37" opacity="0.85"/>
+            <path d="M60 80 Q 175 30, 290 80" stroke="#D4AF37" stroke-width="2" fill="none"/>
+            <path d="M60 620 Q 175 670, 290 620" stroke="#D4AF37" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="gate-seal" id="gateSeal">
+        <div class="gate-seal-circle">
+          <span class="gate-seal-bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+          <h1 class="gate-seal-monogram">M & N</h1>
+          <p class="gate-seal-subtitle">The Nikkah Celebration</p>
+          <div class="gate-lang-actions">
+            <button class="gate-enter-btn" id="gateEnterEn">English</button>
+            <button class="gate-enter-btn gate-ur-btn" id="gateEnterUr">اردو</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="floral-bg-petals" aria-hidden="true" id="petalContainer">
+    </div>
 
   <nav class="navbar">
     <div class="nav-brand">M & N</div>
@@ -82,66 +155,59 @@
   <header id="hero" class="hero-section">
     <div class="decor-vines left-decor">
       <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M-20 -10 Q 40 30, 80 120 T 130 260" stroke="#7A685A" stroke-width="2.5" stroke-linecap="round"/>
-        <path d="M15 15 C-5 35, 30 50, 40 30 Z" fill="#999E86" opacity="0.8"/>
-        <path d="M45 45 C25 65, 60 80, 70 60 Z" fill="#888E75" opacity="0.85"/>
-        <path d="M75 110 C55 130, 90 145, 100 125 Z" fill="#999E86" opacity="0.8"/>
-        <g class="wisteria-cluster" fill="#CBB4D4">
-          <circle cx="85" cy="130" r="7" opacity="0.9"/>
-          <circle cx="80" cy="142" r="6" opacity="0.85"/>
-          <circle cx="88" cy="154" r="5.5" opacity="0.9"/>
-          <circle cx="82" cy="165" r="5" opacity="0.8"/>
+        <path d="M-20 -10 Q 40 30, 80 120 T 130 260" stroke="#2D4637" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M15 15 C-5 35, 30 50, 40 30 Z" fill="#426B54" opacity="0.9"/>
+        <path d="M45 45 C25 65, 60 80, 70 60 Z" fill="#2E523E" opacity="0.95"/>
+        <path d="M75 110 C55 130, 90 145, 100 125 Z" fill="#608A72" opacity="0.85"/>
+        <g class="botanical-cluster" fill="#D98A98">
+          <circle cx="85" cy="130" r="6" opacity="0.9"/>
+          <circle cx="80" cy="142" r="5.5" opacity="0.85"/>
+          <circle cx="88" cy="154" r="5" opacity="0.9"/>
+          <circle cx="82" cy="165" r="4.5" opacity="0.8"/>
           <circle cx="86" cy="175" r="4" opacity="0.75"/>
-          <circle cx="84" cy="184" r="3" opacity="0.7"/>
         </g>
-        <g class="wisteria-cluster" fill="#B897C3">
+        <g class="botanical-cluster" fill="#4B775E">
           <circle cx="125" cy="220" r="7" opacity="0.9"/>
           <circle cx="132" cy="232" r="6" opacity="0.85"/>
           <circle cx="126" cy="244" r="5" opacity="0.8"/>
-          <circle cx="130" cy="254" r="4" opacity="0.75"/>
-          <circle cx="128" cy="263" r="3" opacity="0.7"/>
         </g>
       </svg>
     </div>
 
     <div class="decor-vines right-decor">
       <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M220 -10 Q 160 30, 120 120 T 70 260" stroke="#7A685A" stroke-width="2.5" stroke-linecap="round"/>
-        <path d="M185 15 C205 35, 170 50, 160 30 Z" fill="#999E86" opacity="0.8"/>
-        <path d="M155 45 C175 65, 140 80, 130 60 Z" fill="#888E75" opacity="0.85"/>
-        <path d="M125 110 C145 130, 110 145, 100 125 Z" fill="#999E86" opacity="0.8"/>
-        <g class="wisteria-cluster" fill="#CBB4D4">
-          <circle cx="115" cy="130" r="7" opacity="0.9"/>
-          <circle cx="120" cy="142" r="6" opacity="0.85"/>
-          <circle cx="112" cy="154" r="5.5" opacity="0.9"/>
-          <circle cx="118" cy="165" r="5" opacity="0.8"/>
-          <circle cx="114" cy="175" r="4" opacity="0.75"/>
-          <circle cx="116" cy="184" r="3" opacity="0.7"/>
+        <path d="M220 -10 Q 160 30, 120 120 T 70 260" stroke="#2D4637" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M185 15 C205 35, 170 50, 160 30 Z" fill="#426B54" opacity="0.9"/>
+        <path d="M155 45 C175 65, 140 80, 130 60 Z" fill="#2E523E" opacity="0.95"/>
+        <path d="M125 110 C145 130, 110 145, 100 125 Z" fill="#608A72" opacity="0.85"/>
+        <g class="botanical-cluster" fill="#D98A98">
+          <circle cx="115" cy="130" r="6" opacity="0.9"/>
+          <circle cx="120" cy="142" r="5.5" opacity="0.85"/>
+          <circle cx="112" cy="154" r="5" opacity="0.9"/>
+          <circle cx="118" cy="165" r="4.5" opacity="0.8"/>
         </g>
-        <g class="wisteria-cluster" fill="#B897C3">
+        <g class="botanical-cluster" fill="#4B775E">
           <circle cx="75" cy="220" r="7" opacity="0.9"/>
           <circle cx="68" cy="232" r="6" opacity="0.85"/>
           <circle cx="74" cy="244" r="5" opacity="0.8"/>
-          <circle cx="70" cy="254" r="4" opacity="0.75"/>
-          <circle cx="72" cy="263" r="3" opacity="0.7"/>
         </g>
       </svg>
     </div>
 
     <div class="fairy-lights-container">
       <svg viewBox="0 0 900 140" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 10 Q 225 70, 450 30 T 900 10" stroke="#D4C3B3" stroke-width="1" opacity="0.6"/>
-        <path d="M100 0 Q 325 90, 550 40 T 800 0" stroke="#D4C3B3" stroke-width="0.8" opacity="0.4"/>
-        <line x1="150" y1="36" x2="150" y2="75" stroke="#D4C3B3" stroke-width="0.7" />
-        <circle class="bulb glow-1" cx="150" cy="77" r="4" fill="#FFEAA7"/>
-        <line x1="300" y1="48" x2="300" y2="105" stroke="#D4C3B3" stroke-width="0.7" />
-        <circle class="bulb glow-2" cx="300" cy="107" r="4.5" fill="#FFF3BF"/>
-        <line x1="450" y1="30" x2="450" y2="65" stroke="#D4C3B3" stroke-width="0.7" />
-        <circle class="bulb glow-3" cx="450" cy="67" r="4" fill="#FFEAA7"/>
-        <line x1="600" y1="38" x2="600" y2="115" stroke="#D4C3B3" stroke-width="0.7" />
-        <circle class="bulb glow-1" cx="600" cy="117" r="5" fill="#FFF3BF"/>
-        <line x1="750" y1="22" x2="750" y2="70" stroke="#D4C3B3" stroke-width="0.7" />
-        <circle class="bulb glow-2" cx="750" cy="72" r="4" fill="#FFEAA7"/>
+        <path d="M0 10 Q 225 70, 450 30 T 900 10" stroke="#C5A059" stroke-width="1.2" opacity="0.7"/>
+        <path d="M100 0 Q 325 90, 550 40 T 800 0" stroke="#C5A059" stroke-width="0.9" opacity="0.5"/>
+        <line x1="150" y1="36" x2="150" y2="75" stroke="#C5A059" stroke-width="0.8" />
+        <circle class="bulb glow-1" cx="150" cy="77" r="4.5" fill="#FFE58F"/>
+        <line x1="300" y1="48" x2="300" y2="105" stroke="#C5A059" stroke-width="0.8" />
+        <circle class="bulb glow-2" cx="300" cy="107" r="5" fill="#FFF1B8"/>
+        <line x1="450" y1="30" x2="450" y2="65" stroke="#C5A059" stroke-width="0.8" />
+        <circle class="bulb glow-3" cx="450" cy="67" r="4.5" fill="#FFE58F"/>
+        <line x1="600" y1="38" x2="600" y2="115" stroke="#C5A059" stroke-width="0.8" />
+        <circle class="bulb glow-1" cx="600" cy="117" r="5.5" fill="#FFF1B8"/>
+        <line x1="750" y1="22" x2="750" y2="70" stroke="#C5A059" stroke-width="0.8" />
+        <circle class="bulb glow-2" cx="750" cy="72" r="4.5" fill="#FFE58F"/>
       </svg>
     </div>
 
@@ -150,6 +216,27 @@
         <div class="urdu-hero-title">ہمارا نکاح</div>
         <div class="names-title">Mahen & Nowal</div>
         <p class="subtitle" data-en="September 13, 2026" data-ur="۱۳ ستمبر ۲۰۲۶">September 13, 2026</p>
+        <div class="countdown-container" id="countdown" aria-label="Countdown to wedding">
+          <div class="countdown-card">
+            <span class="countdown-num" id="cd-days">--</span>
+            <span class="countdown-lbl" data-en="Days" data-ur="دن">Days</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-card">
+            <span class="countdown-num" id="cd-hours">--</span>
+            <span class="countdown-lbl" data-en="Hours" data-ur="گھنٹے">Hours</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-card">
+            <span class="countdown-num" id="cd-mins">--</span>
+            <span class="countdown-lbl" data-en="Mins" data-ur="منٹ">Mins</span>
+          </div>
+          <span class="countdown-divider">:</span>
+          <div class="countdown-card">
+            <span class="countdown-num" id="cd-secs">--</span>
+            <span class="countdown-lbl" data-en="Secs" data-ur="سیکنڈ">Secs</span>
+          </div>
+        </div>
       </div>
       <div class="hero-image-wrapper">
       <img src="pic2.png" alt="Mahen and Nowal Illustration" class="hero-img" /> 
@@ -167,11 +254,11 @@
         </div>
         <h3 data-en="When" data-ur="کب">When</h3>
         <p class="highlight-text" data-en="Sunday, September 13, 2026" data-ur="اتوار، ۱۳ ستمبر ۲۰۲۶">Sunday, September 13, 2026</p>
-        <p class="time-slot" data-en="12:30 PM – 02:30 PM" data-ur="۱۲:۳۰ دوپہر – ۰۲:۳۰ دوپہر">12:30 PM – 02:30 PM</p>
+        <p class="time-slot" data-en="02:45 PM – 04:45 PM" data-ur="۰۲:۴۵ دوپہر – ۰۴:۴۵ سہ پہر">02:45 PM – 04:45 PM</p>
         <p
           class="subtext"
           data-en="Join us for a short ceremony and a lovely lunch at the green space we’ve chosen for this special day."
-          data-ur="اس خاص دن کے لیے منتخب کی گئی خوبصورت سبز جگہ پر ایک مختصر تقریب اور پُرلطف دوپہر کے کھانے میں ہمارے ساتھ شامل ہوں۔"
+          data-ur = "ہم نے اپنی مختصر تقریب کے لیے اپنی پسند کی ایک خوبصورت اور سرسبز جگہ منتخب کی ہے۔ چونکہ تقریب کے اوقات مقرر ہیں اور ہماری دو گھنٹے کی محفل پہلے ہی مختصر ہے، اس لیے براہِ کرم دوپہر ۰۲:۴۵ بجے وقت پر تشریف لائیں تاکہ ہم یہ خوبصورت وقت بھرپور انداز میں ایک ساتھ گزار سکیں۔ آپ کے تعاون کا شکریہ۔"
         >
           Join us for a short ceremony and a lovely lunch at the green space we’ve chosen for this special day.
         </p>
@@ -180,8 +267,8 @@
       <section id="where" class="card fade-in">
         <img src="masala_wala.png" alt="Masalawala by Qasr-e-Noor" class="venue-img" />
         <h3 data-en="Where" data-ur="کہاں">Where</h3>
-        <p class="highlight-text" data-en="Masalawala by Qasr-e-Noor" data-ur="مصالحہ والا (بذریعہ قصرِ نور)">Masalawala by Qasr-e-Noor</p>
-        <p class="address-text" data-en="9-E-2, Block E-2, Main Boulevard Gulberg III, Lahore, Pakistan" data-ur="۹-ای-۲، بلاک ای-۲، مین بلیوارڈ گلبرگ III، لاہور، پاکستان">9-E-2, Block E-2, Main Boulevard Gulberg III, Lahore, Pakistan</p>
+        <p class="highlight-text" data-en="Masalawala by Qasr-e-Noor" data-ur="مصالحہ والا (قصرِ نور)">Masalawala by Qasr-e-Noor</p>
+        <p class="address-text" data-en="9-E-2, Block E-2, Main Boulevard Gulberg III, Lahore, Pakistan" data-ur = "۹-ای-۲، بلاک ای-۲، مین بلیوارڈ گلبرگ III، لاہور، پاکستان">9-E-2, Block E-2, Main Boulevard Gulberg III, Lahore, Pakistan</p>
         <p class="landmark-text" data-en="(near Liberty Market)" data-ur="(لبرٹی مارکیٹ کے قریب)">(near Liberty Market)</p>
         <a href="https://www.google.com/maps/place/MASALAWALA+BY+QASAR-E-NOOR/@31.5082744,74.3380652,17z/data=!3m1!4b1!4m6!3m5!1s0x39190533f4afc249:0xbf3cf4f312dfc103!8m2!3d31.5082744!4d74.3380652!16s%2Fg%2F11p4_7mqy1?entry=ttu&g_ep=EgoyMDI2MDgyNC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="btn btn-small" data-en="Open in Maps" data-ur="نقشہ دیکھیں">Open in Maps</a>
       </section>
@@ -195,12 +282,11 @@
         <h3 data-en="The Plan" data-ur="پروگرام">The Plan</h3>
         <p
           class="subtext"
-          data-en="We’ve chosen a lovely green restaurant space for our short celebration. As the restaurant has strict timings and our two-hour gathering is already brief, we kindly ask that you arrive promptly at 12:30 PM so we can make the most of our time together. Thank you for understanding. 🤍"
-          data-ur="ہم نے اپنی مختصر تقریب کے لیے اپنی پسند کی ایک خوبصورت اور سرسبز ریسٹورنٹ کی جگہ منتخب کی ہے۔ چونکہ ریسٹورنٹ کے اوقات مقرر ہیں اور ہماری دو گھنٹے کی محفل پہلے ہی مختصر ہے، اس لیے براہِ کرم دوپہر 12:30 بجے وقت پر تشریف لائیں تاکہ ہم یہ خوبصورت وقت بھرپور انداز میں ایک ساتھ گزار سکیں۔ آپ کے تعاون کا شکریہ۔ 🤍"
+          data-en="We’ve chosen a lovely green restaurant space for our short celebration. As the restaurant has strict timings and our two-hour gathering is already brief, we kindly ask that you arrive at 02:45 PM so we can make the most of our time together. Thank you for understanding. 🤍"
+          data-ur="ہم نے اپنی مختصر تقریب کے لیے اپنی پسند کی ایک خوبصورت اور سرسبز مطعم کی جگہ منتخب کی ہے۔ چونکہ مطعم کے اوقات مقرر ہیں اور ہماری دو گھنٹے کی محفل پہلے ہی مختصر ہے، اس لیے براہِ کرم دوپہر 02:45 بجے وقت پر تشریف لائیں تاکہ ہم یہ خوبصورت وقت بھرپور انداز میں ایک ساتھ گزار سکیں۔ آپ کے تعاون کا شکریہ۔ 🤍"
         >
-          We’ve chosen a lovely green restaurant space for our short celebration. As the restaurant has strict timings and our two-hour gathering is already brief, we kindly ask that you arrive promptly at 12:30 PM so we can make the most of our time together. Thank you for understanding. 🤍
+          We’ve chosen a lovely green restaurant space for our short celebration. As the restaurant has strict timings and our two-hour gathering is already brief, we kindly ask that you arrive promptly at 02:45 PM so we can make the most of our time together. Thank you for understanding. 🤍
         </p>
-        </ul>
       </section>
 
       <section id="dresscode" class="card fade-in">
@@ -218,21 +304,21 @@
       </section>
     </div>
 
+    <section id="wishes" class="card fade-in centered-card">
+      <div class="icon-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+      </div>
 
-<section id="wishes" class="card fade-in centered-card">
-  <div class="icon-badge">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-  </div>
-  <h3 data-en="Wishes & Prayers" data-ur="دعائیں اور نیک تمنائیں">Wishes & Prayers</h3>
-<p
-  class="gifts-text"
-  data-en="Mahen’s sister is making a little booklet for us, filled with your memories, messages, prayers, and wishes. Please click the button below to share yours. Your prayers are our most precious gift. 🤍"
-  data-ur="ماحٍ کی بہن ہم دونوں کے لیے ایک چھوٹی سی کتاب بنا رہی ہیں، جس میں آپ کی یادیں، پیغامات، دعائیں اور نیک تمنائیں شامل ہوں گی۔ براہِ کرم نیچے دیے گئے بٹن پر کلک کرکے اپنی دعائیں اور نیک تمنائیں شیئر کریں۔ آپ کی دعائیں ہمارے لیے سب سے قیمتی تحفہ ہیں۔ 🤍"
->
-  Mahen’s sister is making a little booklet for us, filled with your memories, messages, prayers, and wishes. Please click the button below to share yours. Your prayers are our most precious gift. 🤍
-</p>
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGXqrP2UKVl8zIDDMVNIbtV5KU1aWkj4jD2jSMu9VvOOuZdQ/viewform?usp=sharing&ouid=110689613669099531486" target="_blank" rel="noopener noreferrer" class="btn" data-en="Share Your Wishes & Love" data-ur="اپنی دعائیں شیئر کریں">Share Your Wishes & Love</a>
-</section>
+      <h3 data-en="Wishes & Prayers" data-ur="دعائیں اور نیک تمنائیں">Wishes & Prayers</h3>
+      <p
+        class="gifts-text"
+        data-en="Mahen’s sister is making a little booklet for us, filled with your memories, messages, prayers, and wishes. Please click the button below to share yours. Your prayers are our most precious gift. 🤍"
+        data-ur="ماحٍ کی بہن ہم دونوں کے لیے ایک چھوٹی سی کتاب بنا رہی ہیں، جس میں آپ کی یادیں، پیغامات، دعائیں اور نیک تمنائیں شامل ہوں گی۔ براہِ کرم نیچے دیے گئے بٹن پر کلک کرکے اپنی دعائیں اور نیک تمنائیں شیئر کریں۔ آپ کی دعائیں ہمارے لیے سب سے قیمتی تحفہ ہیں۔ 🤍"
+      >
+        Mahen’s sister is making a little booklet for us, filled with your memories, messages, prayers, and wishes. Please click the button below to share yours. Your prayers are our most precious gift. 🤍
+      </p>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdGXqrP2UKVl8zIDDMVNIbtV5KU1aWkj4jD2jSMu9VvOOuZdQ/viewform?usp=sharing&ouid=110689613669099531486" target="_blank" rel="noopener noreferrer" class="btn" data-en="Share Your Wishes & Love" data-ur="اپنی دعائیں شیئر کریں">Share Your Wishes & Love</a>
+    </section>
 
   </main>
 
@@ -241,6 +327,10 @@
     <p class="footer-text" data-en="We cannot wait to celebrate our Nikkah with you!" data-ur="ہم آپ کے ساتھ اپنے نکاح کی خوشیاں منانے کے منتظر ہیں!">We cannot wait to celebrate our Nikkah with you!</p>
   </footer>
 
-  <script src="script.js"></script>
+  <div class="bottom-credit-bar">
+    <p data-en="Made with love by MFHM Technologies" data-ur="مفہوم ٹیکنالوجیز کی جانب سے خلوص کے ساتھ">Made with love by MFHM Technologies</p>
+  </div>
+
+  <script src="script.js?v=19"></script>
 </body>
 </html>
