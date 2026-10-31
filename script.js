@@ -122,10 +122,10 @@ function initWebsite() {
     }
 
     // 1. Live Countdown Timer
-    // Target: Sept 13, 2026, 2:45 PM PKT
-    // Unix timestamp: 1789292700
+    // Target: Dec 13, 2027, 2:45 PM PKT
+    // Unix timestamp: 1828691100
 
-    const targetTimestamp = 1789292700 * 1000;
+    const targetTimestamp = 1828691100 * 1000;
 
     function updateCountdown() {
         const cdDays = document.getElementById("cd-days");
